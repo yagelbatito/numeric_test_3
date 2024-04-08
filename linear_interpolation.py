@@ -33,12 +33,13 @@ def linearInterpolation(table_points, point):
 
 
 if __name__ == '__main__':
-
-    table_points = [(1, 3), (2, 4), (3, -1)]
-    x = 1.5
+    table_points = [(1.2, 1.5095), (1.3, 1.6984), (1.4, 1.9043), (1.5, 2.1293), (1.6, 2.3756)]
+    x = 1.47
+    y = 1.67
     print(bcolors.OKBLUE, "----------------- Interpolation & Extrapolation Methods -----------------\n", bcolors.ENDC)
     print(bcolors.OKBLUE, "Table Points: ", bcolors.ENDC, table_points)
     print(bcolors.OKBLUE, "Finding an approximation to the point: ", bcolors.ENDC, x)
     linearInterpolation(table_points, x)
+    linearInterpolation(table_points, y)
     print(bcolors.OKBLUE, "\n---------------------------------------------------------------------------\n", bcolors.ENDC)
-    print("https://github.com/Babilabong/tester_3_nomarit\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")
+    print("https://github.com/yagelbatito/numeric_test_3.git\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Yagel Batito 318271863")

@@ -27,9 +27,13 @@ def lagrange_interpolation(x_data, y_data, x):
 
 if __name__ == '__main__':
 
-    x_data = [1, 2, 4]
-    y_data = [1, 0, 1.5]
-    x_interpolate = 3  # The x-value where you want to interpolate
+    x_data = [0.35, 0.4, 0.55, 0.65,0.7]
+    y_data = [-3.65, -3, -2.6, 0.2,1.67]
+    x_interpolate = 0.6  # The x-value where you want to interpolate
     y_interpolate = lagrange_interpolation(x_data, y_data, x_interpolate)
+    x1_interpolate = 0.45  # The x-value where you want to interpolate
+    y1_interpolate = lagrange_interpolation(x_data, y_data, x1_interpolate)
     print(bcolors.OKBLUE, "\nInterpolated value at x =", x_interpolate, "is y =", y_interpolate, bcolors.ENDC)
-    print("https://github.com/Babilabong/tester_3_nomarit\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")
+    print(bcolors.OKBLUE, "\nInterpolated value at x =", x1_interpolate, "is y =", y1_interpolate, bcolors.ENDC)
+
+    print("https://github.com/yagelbatito/numeric_test_3.git\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")

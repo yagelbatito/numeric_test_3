@@ -93,6 +93,6 @@ if __name__ == '__main__':
  ,[  0. ,  0.,   0. ,  0. ,  0. ,  0. ,  0. ,  0.,  48. ,  2. ,  0. ,  0.,0]]
 
     print(f"the input matrix is {A_b}")
-    print("https://github.com/Babilabong/analiza_nomarit_tester_2\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")
+    print("https://github.com/yagelbatito/numeric_test_3.git\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")
 
     lu_solve(A_b)

@@ -2,6 +2,7 @@ import math
 import sympy as sp
 from sympy.utilities.lambdify import lambdify
 from colors import bcolors
+from sympy import symbols, diff, sin, cos, tan
 
 
 def trapezoidal_rule(f, a, b, n,Upper_bound=0):
@@ -26,10 +27,10 @@ def trapezoidal_rule(f, a, b, n,Upper_bound=0):
 
 if __name__ == '__main__':
     x = sp.symbols('x')
-    f = math.e**(x**2)
-    a = 0
-    b = 1
-    n = 2
+    f = sin((x**2)+ (5*x) +6)/ (2*(math.e ** (-1*x)))
+    a = 2.1
+    b = 2.6
+    n = 400
     result = trapezoidal_rule(f, a, b, n,1)
     print(bcolors.OKBLUE,"Approximate integral:", result, bcolors.ENDC)
-    print("https://github.com/Babilabong/tester_3_nomarit\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")
+    print("https://github.com/yagelbatito/numeric_test_3.git\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")

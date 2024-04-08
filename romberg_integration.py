@@ -1,4 +1,6 @@
 import numpy as np
+from sympy import symbols, diff, sin, cos, tan
+
 
 def romberg_integration(f, a, b, n):
     """
@@ -35,12 +37,12 @@ def romberg_integration(f, a, b, n):
 
 # Example function to integrate
 def example_function(x):
-    return 1/(2+(x**4))
+    return (((3*(x**2))-sin((x**4)-x+2))) / (x**2)
 
 # Example usage
-a = 0  # Lower limit
-b = 1  # Upper limit
-n = 4  # Number of iterations
+a = -3.1  # Lower limit
+b = -1.4  # Upper limit
+n = 15  # Number of iterations
 approximation = romberg_integration(example_function, a, b, n)
 print("Approximation of integral:", approximation)
-print("https://github.com/Babilabong/tester_3_nomarit\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")
+print("https://github.com/yagelbatito/numeric_test_3.git\ngroup:Almog Babila 209477678, Hai karmi 207265678, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Almog Babila 209477678")
